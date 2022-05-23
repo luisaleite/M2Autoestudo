@@ -9,3 +9,7 @@ minhaImagem.onclick = function() {
         minhaImagem.setAttribute ('src','imagem/luisa.jpg');
         }
 }
+
+function clique(){
+    document.getElementById("linha").innerHTML += "oi!"; 
+}
