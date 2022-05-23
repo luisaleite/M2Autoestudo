@@ -1,5 +1,4 @@
 let minhaImagem = document.querySelector('img');
-
 minhaImagem.onclick = function() {
     let meuSrc = minhaImagem.getAttribute('src');
         if(meuSrc === 'imagem/luisa.jpg') {
@@ -13,3 +12,9 @@ minhaImagem.onclick = function() {
 function clique(){
     document.getElementById("linha").innerHTML += "oi!"; 
 }
+
+$(document).ready(function(){
+    $("#nome").mouseenter(function(){
+      alert("Oi eu sou a Luísa");
+    });
+  });
