@@ -1,6 +1,5 @@
-# Nome do aluno
+# Luísa Vitoria Leite Silva
 Minhas entregas estão definidas aqui:
-## Auto Estudo
-<a href="https://github.com/Intelihub/Template_Aluno/blob/main/02_AUT_EST_ENTREGA/Coloque%20aqui%20as%20entregas%20do%20seu%20auto%20estudo.rtf"> 19/04/2022 - Entrega 1 </a>
-## Obrigatórios
-<a href="https://github.com/Intelihub/Template_Aluno/blob/main/03_EX_OBRIGATORIOS/Coloque%20aqui%20entregas%20de%20exerc%C3%ADcios%20obrigat%C3%B3rios.rtf"> 19/04/2022 - Entrega 1 </a>
+## Exercicíos Opcionais
+<h1> Exercicíos de 1000 até 1011, 1018, 1035, 1037 até 1042, 1045, 1046, 1048, 1049, 1051, 1115, 1117, 2780 </h1>
+<br>
