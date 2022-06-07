@@ -1,5 +1,5 @@
 let input = document.getElementById("lista_desorganizada")
-let result = document.getElementById("vem")
+let result = document.getElementById("listaordenada")
 let sortedList
 
 function ordena_lista() {
@@ -42,11 +42,11 @@ function sort(list) {
     return list
 }
 
-function achar_valor_foco(){
-    let foco=document.getElementById("valor-foco").value
-    for(i=0; i<sortedList.length -1 ; i++){
-        if(foco == sortedList[i]){
-            return alert("indice do valor foco é: " + i)
-        }
+
+
+function valor_foco(){
+
+    let lista_ordenada = [(document.getElementById("listaordenada"))]
+     console.log(lista_ordenada.indexOf(document.getElementById("elemento").value))
     }
-}
+    
