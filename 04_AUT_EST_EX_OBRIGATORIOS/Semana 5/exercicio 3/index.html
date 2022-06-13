@@ -7,15 +7,16 @@
     <title>Exercicio 3</title>
 </head>
 <body>
-    Insira seu valor:
+    <h1>Insira sua lista:</h1>
     <input id="lista_desorganizada" type="text"  />
-    <button onclick = "ordena_lista();" id = "arruma a lista">ORDENA!</button>
-    <ul id='listaordenada'></ul><br><br>
-
-    Qual o valor-foco?
-    <input id="elemento" type="text"  />
-    <button onclick = "valor_foco();" id = "foco">ACHE!</button>
-    <ul id='resultado'></ul>
+    <button onclick = "ordena_lista();" id = "arruma a lista">
+        ORDENA!
+    </button>
+    <h1 id='listaorganizada' class="listaorganizada"></h1><br><br>
+    <h1>Insira um valor da lista</h1>
+    <input id="valor_foco" type="text"/>
+    <button onclick = "valor_foco();" id = "acha valor">ACHE</button>
+    <h1 class="valorfoco" id='valorfoco'></h1><br><br>
 
 </body>
 <script src ="./exercicio3.js"></script>

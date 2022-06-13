@@ -1,52 +1,37 @@
 let input = document.getElementById("lista_desorganizada")
-let result = document.getElementById("listaordenada")
-let sortedList
+let result = document.getElementById("listaorganizada")
+let sortedItems
 
 function ordena_lista() {
-    let list = input.value.split(",")
-    list = list.map(item => parseInt(item))
-    sortedList= sort(list)
+    let items = input.value.split(",")
+    items = items.map(item => parseInt(item))
+    sortedItems = bubblesort(items)
     let li = document.createElement("li")
 
     li.innerHTML = `${
-        sortedList
+        sortedItems
         
     }`
     result.appendChild(li)
 }
 
-function sort(list) {
-    let temp
-    for (
-        let i = 0;
-        i < list.length;
-        i++
-
-    ) {
-        for (
-            let j = 0;
-            j < list.length - i - 1;
-            j++
-        ) {
-            if (
-                list[j] > list[j + 1]
-
-            ) {
-                temp = list[j] 
-                list[j] = list[j+1]
-                list[j+1]= temp
-
+function bubblesort(items){
+    let swap;
+    let last = items.length - 1;
+    do{
+        swap = false;
+        for (let i = 0; i < last; i++) {
+            if (items[i] > items[i+1]){
+                [items[i], items[i+1]] = [items[i+1], items[i]];
+                swap = true
             }
         }
-    }
-    return list
+        last--;
+    } while(swap)
+    return items;
 }
-
-
 
 function valor_foco(){
 
-    let lista_ordenada = [(document.getElementById("listaordenada"))]
-     console.log(lista_ordenada.indexOf(document.getElementById("elemento").value))
-    }
-    
+}
+
