@@ -44,29 +44,25 @@ function buscabinaria(valor_foco){
     var nachei = true;
     var maximo = items.length-1;
     var minimo = 0; 
-    while (nachei  &&  (maximo > minimo)){
-        console.log("Indice do meio " + indicidomeio)
-        console.log(maximo)
-        console.log(minimo)
-
+    while (minimo <= maximo && nachei) {
         var indicidomeio = Math.floor((maximo+minimo)/2)
-        console.log("Item " + items[indicidomeio])
         if (items[indicidomeio] == Number(valor_foco)){
             nachei = false
-            return indicidomeio
         }
         else {
             if (items[indicidomeio] > valor_foco){
-                maximo = indicidomeio
+                maximo = indicidomeio - 1;
             }
-            else 
-            {
-                minimo = indicidomeio
+            else {
+                minimo = indicidomeio + 1;
             }
 
         }
-        
     }
+    console.log("Indice do meio " + indicidomeio)
+    console.log("Item " + items[indicidomeio])
+    return nachei;
+
 }
 
 

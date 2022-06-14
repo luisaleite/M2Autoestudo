@@ -15,6 +15,7 @@ app.get('/user', (req, res) => {
     res.setHeader('Access-Control-Allow-Origin', '*'); // Isso é importante para evitar o erro de CORS
     var db = new sqlite3.Database(DBPATH); // Abre o banco
     var sql = `SELECT * FROM Academica`;
+    
     db.all(sql, [],  (err, rows ) => {
         if (err) {
             throw err;

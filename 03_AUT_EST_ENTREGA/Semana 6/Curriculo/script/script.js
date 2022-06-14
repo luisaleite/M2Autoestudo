@@ -9,15 +9,13 @@ minhaImagem.onclick = function() {
         }
 }
 
-function clique(){
-    document.getElementById("linha").innerHTML += "oi!"; 
-}
-
 $(document).ready(function(){
     $("#nome").mouseenter(function(){
       alert("Oi eu sou a Luísa");
     });
   });
+
+  
 
 function criarLinha(){
   $.get("http://127.0.0.1:3020/user", function(mensagem){

@@ -7,10 +7,12 @@
     </head>
     <body>
         <h1>Quantidade de pessoas</h1>
-        <input type="number" id="pessoas">
+        <input type="text" id="pessoas">
         <h1>Período</h1>
-        <button onclick=diurno() id="diurno">diurno</button>
-        <button onclick=noturno() id="noturno">noturno</button><br><br>
+        <select name="periodo" id="periodo">
+            <option value="volvo">noturno</option>
+            <option value="saab">diurno</option>
+        </select><br><br>
         <button onclick=calcular() id="calcular">CALCULAR</button><br>
         <p id="resultado"></p>
         <script src="script.js"></script>
