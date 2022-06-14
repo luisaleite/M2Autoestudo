@@ -4,20 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercicio 3</title>
+    <title>Document</title>
+    <script src="script.js"></script>
 </head>
 <body>
-    <h1>Insira sua lista:</h1>
-    <input id="lista_desorganizada" type="text"  />
-    <button onclick = "ordena_lista();" id = "arruma a lista">
-        ORDENA!
-    </button>
-    <h1 id='listaorganizada' class="listaorganizada"></h1><br><br>
-    <h1>Insira um valor da lista</h1>
-    <input id="valor_foco" type="text"/>
-    <button onclick = "ache();" id = "acha valor">ACHE</button>
-    <h1  id='resultado'></h1><br><br>
+    <h1>ORDENANDO LISTA</h1>
 
+    Digite uma lista de valores, os separando por vígula:
+
+     <input type="text" id="lista"> <br>
+
+    Valor-foco:
+    <input type="number" id="valorFoco"> <br>
+
+    <button id="ordenar" onclick="ordenar()">Ordenar</button>
+    
+    <h2>A lista de valores ordenada é: </h2>
+    <p id="listaOrdenada"></p>
+    <h2>Posição do valor foco é: </h2>
+    <p id="posicaoVF"></p>
 </body>
-<script src ="./exercicio3.js"></script>
 </html>
