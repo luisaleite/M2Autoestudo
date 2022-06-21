@@ -1,4 +1,4 @@
-import {openDb} from '../configDB.js';
+import {openDb} from './configBD.js';
 
 
 //criar tabela
