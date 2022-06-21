@@ -1,5 +1,6 @@
 const text1 = document.getElementById('pessoas');
 const text2 = document.getElementById('periodo');
+
 function buttonEnviar(){
     var valor1 = parseInt(text1.value);
     var valor2 = text2.value;

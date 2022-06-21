@@ -11,7 +11,8 @@ app.use(express.json());
 // const sqlite3 = require('sqlite3').verbose();
 
 const DBPATH = 'dbUser.db';
-//creatingTable();
+
+creatingTable();
 
 app.get('/user', (req, res) => {
     res.statusCode = 200;
