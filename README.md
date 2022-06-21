@@ -10,6 +10,7 @@ Minhas entregas estão definidas aqui:
 ## Obrigatórios
 <a href="https://github.com/luisaleite/Modulo2/tree/main/04_AUT_EST_EX_OBRIGATORIOS/Semana%203"> Exercicíos - Semana 3 <br>
   <a href="https://github.com/luisaleite/Modulo2/tree/main/04_AUT_EST_EX_OBRIGATORIOS/Semana%205"> Exercicíos - Semana 5 <br>
-      <a href="https://github.com/luisaleite/Modulo2/tree/main/04_AUT_EST_EX_OBRIGATORIOS/Semana%207"> Exercicíos - Semana 7
+      <a href="https://github.com/luisaleite/Modulo2/tree/main/04_AUT_EST_EX_OBRIGATORIOS/Semana%207"> Exercicíos - Semana 7<br>
+       <a href="https://github.com/luisaleite/Modulo2/tree/main/04_AUT_EST_EX_OBRIGATORIOS/Semana%209"> Exercicíos - Semana 9
     
 
