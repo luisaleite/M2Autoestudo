@@ -1,14 +1,14 @@
 import express from 'express';
 import sqlite3 from 'sqlite3';
 import {creatingTable, insertUser, updateUser} from './Controler/User.js';
-//const sqlite3 = require("sqlite3").verbose();
-//const express = require('express');
+
 
 
 const app = express();
+
 app.use(express.urlencoded({extended: false}));
 app.use(express.json());
-// const sqlite3 = require('sqlite3').verbose();
+
 
 const DBPATH = 'dbUser.db';
 
@@ -34,13 +34,14 @@ app.post('/userinsert', (req, res) => {
     res.statusCode = 200;
     res.setHeader('Access-Control-Allow-Origin', '*'); // Isso é importante para evitar o erro de CORS
 
-    sql = "INSERT INTO Academica (Instituicao, Curso) VALUES ('" + req.body.Instituicao + "', '" + req.body.Curso + "')";
+   var sql = "INSERT INTO Academica (Instituicao, Curso) VALUES ('" + req.body.Instituicao + "', '" + req.body.Curso + "')";
     var db = new sqlite3.Database(DBPATH); // Abre o banco
     db.run(sql, [],  err => {
         if (err) {
             throw err;
         }
     });
+    console.log(sql)
     db.close(); // Fecha o banco
     res.end();
 });
